@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptuenx - Modern Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #222;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background: #444;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff9800;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .post {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .post img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .post h2 {
+            margin: 1rem 0;
+            font-weight: 700;
+        }
+
+        .post p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .post a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #ff9800;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 700;
+            transition: background 0.3s;
+        }
+
+        .post a:hover {
+            background: #e68900;
+        }
+
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        .about, .contact {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        .about h2, .contact h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .about p, .contact p {
+            margin: 0.5rem 0;
+            font-weight: 400;
+        }
+
+        .about img {
+            width: 100%;
+            max-width: 400px;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact a {
+            color: #ff9800;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NeptuenX</h1>
+        <p>Exploring the Modern Digital World</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="post">
+            <img src="C:\Users\appaj\OneDrive\Desktop\blogs\rov.jpg">
+            <h2>Creating Prototype</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat metus quis urna scelerisque vehicula.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="/mnt/data/Screenshot 2024-12-12 221811.png" alt="Blog Image 2">
+            <h2>Blog Post Two</h2>
+            <p>Proin sit amet felis nec velit ultricies scelerisque at ac nisi. Quisque vestibulum lacinia pharetra.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="image3.jpg" alt="Blog Image 3">
+            <h2>Blog Post Three</h2>
+            <p>Maecenas id nunc a velit tristique aliquam eget non lorem. Aliquam erat volutpat.</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+
+    <div id="about" class="about">
+        <h2>About Us</h2>
+        <img src="C:\Users\appaj\OneDrive\Desktop\blogs\sms.jpg">
+        <p>Welcome to <strong>Neptuenx</strong>, your go-to source for modern digital insights. Our mission is to explore, analyze, and share the latest trends in technology, blogging, and digital culture.</p>
+        <p>Founded in 2024, NeptuenX is dedicated to providing quality content that helps you stay informed and inspired in the ever-evolving digital world.</p>
+        <p>Join us on this journey as we uncover the stories that shape our digital lives.</p>
+    </div>
+
+    <div id="contact" class="contact">
+        <h2>Contact Us</h2>
+       <p><strong>Email:</strong> <a href="mailto:sanketsmalkhed.com">sanketsmalkhed@gmail.com</a></p>
+        <p><strong>Phone:</strong> +1 (234) 567-8901</p>
+        <p><strong>Address:</strong> DR.AIT Banglore Karnataka 560056</p>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Neptuenx | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
